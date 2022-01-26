@@ -3,10 +3,34 @@ import Wilder from "../components/Wilder";
 
 const Home: NextPage = () => {
   const wilders = [
-    { name: "John" },
-    { name: "Paul" },
-    { name: "George" },
-    { name: "Ringo" },
+    {
+      name: "John",
+      skills: [
+        { name: "HTML", votes: 3 },
+        { name: "JS", votes: 2 },
+      ],
+    },
+    {
+      name: "Paul",
+      skills: [
+        { name: "PHP", votes: 6 },
+        { name: "Symfony", votes: 2 },
+      ],
+    },
+    {
+      name: "George",
+      skills: [
+        { name: "HTML", votes: 3 },
+        { name: "CSS", votes: 2 },
+      ],
+    },
+    {
+      name: "Ringo",
+      skills: [
+        { name: "React", votes: 3 },
+        { name: "NextJS", votes: 2 },
+      ],
+    },
   ];
   return (
     <div>
