@@ -1,9 +1,10 @@
 import blank_profile from "../public/blank-profile-picture-female.png";
 import Image from "next/image";
-import Skill from "./Skill";
+import Skill, { SkillProps } from "./Skill";
 
 interface WilderProps {
   name: string;
+  skills: Array<SkillProps>;
 }
 
 function Wilder({ name }: WilderProps) {

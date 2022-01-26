@@ -1,4 +1,9 @@
-const Skill = () => {
+export interface SkillProps {
+  name: string;
+  votes: number;
+}
+
+const Skill = ({ name, votes }: SkillProps) => {
   return (
     <li>
       HTML
