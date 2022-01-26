@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         <h2>Wilders</h2>
         <section className="card-row">
           {wilders.map((el) => (
-            <Wilder name={el.name} />
+            <Wilder name={el.name} skills={el.skills} />
           ))}
         </section>
       </main>

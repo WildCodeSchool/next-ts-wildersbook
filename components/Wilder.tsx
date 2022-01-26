@@ -7,7 +7,7 @@ interface WilderProps {
   skills: Array<SkillProps>;
 }
 
-function Wilder({ name }: WilderProps) {
+function Wilder({ name, skills }: WilderProps) {
   return (
     <article className="card">
       <Image src={blank_profile} alt="Jane Doe Profile" />
@@ -20,11 +20,9 @@ function Wilder({ name }: WilderProps) {
       </p>
       <h4>Wild Skills</h4>
       <ul className="skills">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        {skills.map((el) => (
+          <Skill name={el.name} votes={el.votes} />
+        ))}
       </ul>
     </article>
   );

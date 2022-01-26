@@ -6,8 +6,8 @@ export interface SkillProps {
 const Skill = ({ name, votes }: SkillProps) => {
   return (
     <li>
-      HTML
-      <span className="votes">3</span>
+      {name}
+      <span className="votes">{votes}</span>
     </li>
   );
 };
