@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import AddWilderForm from "../components/AddWilderForm";
 import Wilder from "../components/Wilder";
 import { WilderProps } from "../components/Wilder";
 import dbConnect from "../lib/dbConnect";
@@ -18,6 +19,7 @@ const Home: NextPage<{ wilders: WilderProps[] }> = ({
       </header>
       <main className="container">
         <h2>Wilders</h2>
+        <AddWilderForm />
         <section className="card-row">
           {wilders.map((el) => (
             <Wilder name={el.name} skills={el.skills} />
