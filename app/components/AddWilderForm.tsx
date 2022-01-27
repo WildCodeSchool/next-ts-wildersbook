@@ -31,7 +31,7 @@ const AddWilderForm = () => {
         autoComplete="name"
         required
       />
-      <button type="submit">Register</button>
+      <button type="submit">Add Wilder</button>
     </form>
   );
 };
