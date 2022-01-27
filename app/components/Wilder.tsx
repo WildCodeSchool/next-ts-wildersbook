@@ -20,8 +20,8 @@ function Wilder({ name, skills }: WilderProps) {
       </p>
       <h4>Wild Skills</h4>
       <ul className="skills">
-        {skills.map((el) => (
-          <Skill name={el.name} votes={el.votes} />
+        {skills.map((el, index) => (
+          <Skill key={index} name={el.name} votes={el.votes} />
         ))}
       </ul>
     </article>

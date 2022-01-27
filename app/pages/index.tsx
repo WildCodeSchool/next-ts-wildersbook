@@ -21,8 +21,8 @@ const Home: NextPage<{ wilders: WilderProps[] }> = ({
         <h2>Wilders</h2>
         <AddWilderForm />
         <section className="card-row">
-          {wilders.map((el) => (
-            <Wilder name={el.name} skills={el.skills} />
+          {wilders.map((el, index) => (
+            <Wilder key={index} name={el.name} skills={el.skills} />
           ))}
         </section>
       </main>
