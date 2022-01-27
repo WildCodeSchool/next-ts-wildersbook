@@ -2,7 +2,7 @@ import blank_profile from "../public/blank-profile-picture-female.png";
 import Image from "next/image";
 import Skill, { SkillProps } from "./Skill";
 
-interface WilderProps {
+export interface WilderProps {
   name: string;
   skills: Array<SkillProps>;
 }
