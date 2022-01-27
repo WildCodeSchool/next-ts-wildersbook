@@ -1,8 +1,11 @@
-front:
-  build: ./app/
-  volumes:
-    - ./app:/app
-  ports:
-    - 3000:3000
-db:
-  image: mongo
+services:
+  front:
+    build: ./app/
+    volumes:
+      - ./app:/app
+    ports:
+      - 3000:3000
+  db:
+    image: mongo
+  mongo-seed:
+    build: ./mongo-seed
